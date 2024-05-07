@@ -84,28 +84,13 @@
     "phone": "+372 5093 887",
     "email": "info@ulah.eu"
   },
-  "Tips": {
-    "Photos1": [
-      "Passionate",
-      "Hard working",
-      "Driven",
-      "Problem solving"
-    ],
-    "Photos2": [
-      "Innovative",
-      "Communication",
-      "Punctual",
-      "Reliable"
-    ],
-    "Videos1": [
-      "Innovative",
-      "Communication",
-      "Punctual",
-      "Reliable"
-    ]
-  },
-
-
+  "Documents": [
+    {
+      "icon": "fa fa-shield",
+      "title": "Data protection document",
+      "link": "https://docs.google.com/document/d/1WXXwhhhDO5x9iEuyjQ0JUCgk-q5ses9GTRtfWBPRxJM/edit"
+    }
+  ],
 
   "Features": [
     {

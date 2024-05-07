@@ -36,7 +36,8 @@ export const Tips = (props) => {
 
           <div className="col-xs-12 col-md-6">
             <h3>Videos</h3>
-            <div className="col-lg-6 col-sm-6 col-xs-12">
+            {/* <div className="col-lg-6 col-sm-6 col-xs-12"> */}
+            <div>
               <ul>
                 <li>Film video in landscape format (turn your phone on it's side)</li>
                 <li>In introduction clip, talk shortly about yourself - name, age, what you do in life, what are your hobbies. Intro clip should not be longer than 1 minute.</li>

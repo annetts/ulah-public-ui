@@ -341,7 +341,12 @@ header .intro-text {
 }
 #tips h3 {
   font-size: 22px;
-  margin: 0 0 20px;
+  margin: 20px;
+  padding: 10px;
+}
+#tips p {
+  margin: 20px;
+  padding: 10px;
 }
 #tips h2::after {
   background: linear-gradient(to right, #cccccc 0%, #a6a6a6 100%);
@@ -506,6 +511,7 @@ header .intro-text {
   font-weight: 600;
   color: #666;
 }
+
 /* Team Section */
 #team {
   padding: 100px 0;
@@ -524,6 +530,34 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
+/* Documents Section */
+#documents {
+  padding: 100px 0;
+}
+#documents h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color: "#59C9AB";
+}
+#documents i {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #777;
+}
+#documents a {
+  margin-bottom: 15px;
+  padding: 20px;
+  font-family: "ZuersRegular";
+  font-size: 20px;
+  font-weight: 500;
+  color: #777;
+}
+#documents a:hover {
+  cursor: pointer;
+}
+
 /* Contact Section */
 #contact {
   padding: 100px 0;
@@ -621,8 +655,8 @@ label {
 #contact .contact-textbox {
   background-color: #f0f0f0; 
   border-radius: 10px; 
-  padding: 10px; 
-  margin: 10px 0;
+  padding: 40px; 
+  margin: 20px;
 }
 #contact .contact-imgbox {
   border-radius: 10px; 
