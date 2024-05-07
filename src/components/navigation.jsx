@@ -21,17 +21,11 @@ export const Navigation = (props) => {
             <img alt="" src="img/icon/Black-logo-no-background.png"></img>
           </a>{" "}
         </div>
-        -
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-            {/* <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li> */}
             <li>
               <a href="#about" className="page-scroll">
                 About
@@ -43,20 +37,10 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#gallery" className="page-scroll">
+              <a href="#projects" className="page-scroll">
                 Projects
               </a>
-            </li>
-            {/* <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li> */}
-            {/* <li>
-                <a href="#team" className="page-scroll">
-                  Team
-                </a>
-              </li> */}
+            </li>    
             <li>
               <a href="#contact" className="page-scroll">
                 Contact

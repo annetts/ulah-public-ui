@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Image = ({ title, largeImage, smallImage }) => {
+export const Image = ({ title, smallImage, link }) => {
   return (
-    <div className="portfolio-item">
+    <div className="projects-item">
       <div className="hover-bg">
         {" "}
-        <a href={largeImage} title={title} data-lightbox-gallery="gallery1">
+        <a href={link} title={title} data-lightbox-gallery="projects">
           <div className="hover-text">
             <h4>{title}</h4>
           </div>

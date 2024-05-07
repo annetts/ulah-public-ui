@@ -1,36 +1,15 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { postFrom } from "../routes/talentRoute"
 
 export const TalentForm = (props) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    birthday: "",
+    height: "",
   });
 
-  const url = "http://localhost:7000";
-
-  const axiosAPI = axios.create({
-    baseURL: url,
-  });
-
-  const apiFromRequest = (method, url, request) => {
-    return axiosAPI({
-      method,
-      url,
-      data: request,
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    })
-      .then((res) => {
-        return Promise.resolve(res.data);
-      })
-      .catch((err) => {
-        return Promise.reject(err);
-      });
-  };
-
-  const postFrom = (url, request) => apiFromRequest("post", url, request);
+  const [selectedFiles, setSelectedFiles] = useState([]);
 
   const handleChange = (e) => {
     setFormData({
@@ -39,31 +18,38 @@ export const TalentForm = (props) => {
     });
   };
 
+  const handleFileChange = (event) => {
+    setSelectedFiles([...selectedFiles, ...event.target.files]);
+  };
+
   async function handleTalentSave(e) {
     e.preventDefault();
-    console.log(e.target);
-    // Code to handle login goes here
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('birthday', formData.birthday);
+    formDataToSend.append('height', formData.height);
+
+    selectedFiles.forEach(file => {
+      formDataToSend.append('files', file);
+    });
 
     try {
-      //const response = await fetch("http://localhost:7000/talent/save", {
-      const response = postFrom("/talent/save", e.target);
-
+      console.log(e.target);
+      const response = postFrom("/talent/save", formDataToSend);
       if (response.ok) {
         console.log("Data successfully submitted!");
-        // You can handle success here, such as showing a success message to the user.
       } else {
         console.error("Error submitting data:", response.statusText);
-        // You can handle errors here, such as showing an error message to the user.
       }
     } catch (error) {
       console.error("Error:", error.message);
     }
-
     props.toggle();
   }
 
   return (
-    <div className="popup w-full h-full flex items-center justify-center p-8 lg:p-0">
+    <div className="popup z-100 w-full h-full flex items-center justify-center p-8 lg:p-0">
       <div className="popup-inner w-full h-full bg-gray-900 opacity-50">
         <div className="p-8 rounded border border-gray-200">
           <h2>Save to Ulah database</h2>
@@ -141,6 +127,27 @@ export const TalentForm = (props) => {
                     name="birthdate"
                     onChange={handleChange}
                   />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label for="height" className="col-sm-2 control-label">
+                  Height:
+                </label>
+                <div className="col-sm-10">
+                  <input
+                    type="date"
+                    className="form-control"
+                    id="height"
+                    name="height"
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <div>
+                  <input type="file" multiple onChange={handleFileChange} />
                 </div>
               </div>
 

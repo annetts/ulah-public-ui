@@ -18,22 +18,42 @@
       "Reliable"
     ]
   },
-  "Gallery": [
+  "Projects": [
     {
       "title": "A320 Saudia TVC",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg",
+      "largeImage": "img/projects/a320.png",
+      "smallImage": "img/projects/a320.png",
       "link": "https://vimeo.com/330993133"
     },
     {
-      "title": "Project 2",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": " BMW Unplug & Play",
+      "largeImage": "img/projects/bmw.png",
+      "smallImage": "img/projects/bmw.png",
+      "link": "https://vimeo.com/351185981"
     },
     {
-      "title": "Project 3",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": " Ikea Storage Family",
+      "largeImage": "img/projects/ikea.png",
+      "smallImage": "img/projects/ikea.png",
+      "link": "https://vimeo.com/329964485"
+    },
+    {
+      "title": "Telia “Greener future” TVC",
+      "largeImage": "img/projects/telia.png",
+      "smallImage": "img/projects/telia.png",
+      "link": "https://vimeo.com/487181240"
+    },
+    {
+      "title": " Volkswagen Caddy Cargo TVC",
+      "largeImage": "img/projects/volkswagen.png",
+      "smallImage": "img/projects/volkswagen.png",
+      "link": "https://vimeo.com/487188327"
+    },
+    {
+      "title": "The Twin Trailer (2022)",
+      "largeImage": "img/projects/twin.png",
+      "smallImage": "img/projects/twin.png",
+      "link": "https://www.youtube.com/watch?v=8O67Y0Jqg0s"
     }
   ],
   "Services": [
@@ -56,6 +76,79 @@
       "icon": "fa fa-american-sign-language-interpreting",
       "name": "Cast PA on set",
       "text": "We take care of your talents on set like they’re on all-in vacation."
+    }
+  ],
+  "Contact": {
+    "name": "Meeli Seermaa",
+    "address": "Tallinn, Estonia ",
+    "phone": "+372 5093 887",
+    "email": "info@ulah.eu"
+  },
+  "Tips": {
+    "Photos1": [
+      "Passionate",
+      "Hard working",
+      "Driven",
+      "Problem solving"
+    ],
+    "Photos2": [
+      "Innovative",
+      "Communication",
+      "Punctual",
+      "Reliable"
+    ],
+    "Videos1": [
+      "Innovative",
+      "Communication",
+      "Punctual",
+      "Reliable"
+    ]
+  },
+
+
+
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
     }
   ],
   "Testimonials": [
@@ -88,56 +181,6 @@
       "img": "img/testimonials/06.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "Johnathan Doe"
-    }
-  ],
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    }
-  ],
-  "Contact": {
-    "name": "Meeli Seermaa",
-    "address": "Tallinn, Estonia ",
-    "phone": "+372 5093 887",
-    "email": "info@ulah.eu"
-  },
-  "Features": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
   ]
 }

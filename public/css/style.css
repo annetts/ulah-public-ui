@@ -334,6 +334,33 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
+
+/* Tips Section */
+#tips {
+  padding: 100px 0;
+}
+#tips h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#tips h2::after {
+  background: linear-gradient(to right, #cccccc 0%, #a6a6a6 100%);
+}
+#tips .tips-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#tips .tips-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #a6a6a6;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+
 /* Services Section */
 #services {
   padding: 100px 0;
@@ -358,7 +385,6 @@ header .intro-text {
   color: #080808;
 }
 #services i.fa {
-  //#services .projectIcons {
   font-size: 42px;
   width: 120px;
   height: 120px;
@@ -366,15 +392,11 @@ header .intro-text {
   background: linear-gradient(to right, #a6a6a6 0%, #999999 100%);
   border-radius: 50%;
   color: #000000;
-  //color: #ffff00;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 #services i.fa:hover {
-  //#services .projectIcons:hover {
   background: #ffff00;
-  color: #ffff00;
-
-  //color: #000000;
+  color: #000000;
 }
 #services h3 {
   font-weight: 500;
@@ -387,24 +409,27 @@ header .intro-text {
 #services .service-desc {
   margin-bottom: 40px;
 }
-/* Portfolio Section */
-#portfolio {
+/* Projects Section */
+#projects {
   padding: 100px 0;
 }
-#portfolio h2::after {
+#projects h2::after {
   background: linear-gradient(to right, #cccccc 0%, #a6a6a6 100%);
 }
-.portfolio-item {
+.projects-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
+  width: 350px; /* You can set the dimensions to whatever you want */
+  height: 250px;
+  object-fit: cover;
 }
-.portfolio-footer {
+.projects-footer {
   font-size: 24px;
   margin-top: 40px;
-  margin-bottom: 40px;
-  weight: 400;
+  margin-bottom: 50px;
+  font-weight: 400;
 }
-.portfolio-item .hover-bg {
+.projects-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -415,7 +440,6 @@ header .intro-text {
   margin: 0 auto;
   color: #fff;
   background: linear-gradient(to right, #cccccc 0%, #a6a6a6 100%);
-
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -594,6 +618,17 @@ label {
 #contact .contact-item {
   margin: 20px 0;
 }
+#contact .contact-textbox {
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+  padding: 10px; 
+  margin: 10px 0;
+}
+#contact .contact-imgbox {
+  border-radius: 10px; 
+  padding: 20px;
+  margin: 20px 0;
+}
 #contact .contact-item span {
   color: #080808;
   margin-bottom: 10px;
@@ -627,7 +662,7 @@ label {
   background: #fff;
 }
 #contact img {
-  height: 420px;
+  height: 400px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
