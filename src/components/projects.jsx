@@ -28,7 +28,7 @@ export const Projects = (props) => {
         <div className="projects-footer">
             <p>
               These are just some of our finished projects, we look forward to discussing further details, exploring potential collaborations, 
-              and tailoring solutions to meet your unique needs. Feel free to reach out, and let's start a conversation.
+              and tailoring solutions to meet your unique needs.
             </p>
         </div>
       </div>

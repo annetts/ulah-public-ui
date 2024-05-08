@@ -14,29 +14,29 @@ export const Contact = (props) => {
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-user"></i> Name
-                  </span>{" "}{props.data ? props.data.name : "loading"}
+                    <i className="fa fa-user"></i> {props.data ? props.data.name : "loading"}
+                  </span>{" "}
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-map-marker"></i> Address
-                  </span>{" "}{props.data ? props.data.address : "loading"}
+                    <i className="fa fa-map-marker"></i> {props.data ? props.data.address : "loading"}
+                  </span>{" "}
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-phone"></i> Phone
-                  </span>{" "}{props.data ? props.data.phone : "loading"}
+                    <i className="fa fa-phone"></i> {props.data ? props.data.phone : "loading"}
+                  </span>{" "}
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-envelope-o"></i> Email
-                  </span>{" "}{props.data ? props.data.email : "loading"}
+                    <i className="fa fa-envelope-o"></i> {props.data ? props.data.email : "loading"}
+                  </span>{" "}
                 </p>
               </div>
             </div>

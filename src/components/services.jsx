@@ -12,25 +12,21 @@ export const Services = (props) => {
             performers to bring your vision to life.
           </p>
         </div>
-        <div className="flex p-8 justify-center">
-          <div className="sm:flex sm:justify-center">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.name}-${i}`}
-                    aria-hidden="true"
-                    className="col-md-4"
-                  >
-                    {" "}
-                    <i className={d.icon}></i>
-                    <div className="service-desc">
-                      <h3>{d.name}</h3>
-                      <p>{d.text}</p>
-                    </div>
-                  </div>
-                ))
-              : "loading"}
-          </div>
+        <div className="grid gap-4 p-8 justify-center">
+          {props.data ? props.data.map((d, i) => (
+            <div
+              key={`${d.name}-${i}`}
+              aria-hidden="true"
+              className="col-md-6"
+            >
+              {" "}
+              <i className={d.icon}></i>
+              <div className="service-desc">
+                <h3>{d.name}</h3>
+                <p>{d.text}</p>
+              </div>
+            </div>
+          )) : "loading"}
         </div>
       </div>
     </div>
