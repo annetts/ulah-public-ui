@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TalentForm } from "./talentForm";
 
 export const Header = (props) => {
   const [seen, setSeen] = useState(false);
+
+  useEffect(() => {
+    if (seen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }, [seen]);
 
   function togglePop() {
     setSeen(!seen);

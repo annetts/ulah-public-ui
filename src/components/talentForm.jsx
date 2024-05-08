@@ -54,7 +54,7 @@ export const TalentForm = (props) => {
         <div className="p-8 rounded border border-gray-200">
           <h2>Save to Ulah database</h2>
           <p className="text-gray-600 mt-6">
-            Name, phonenumber and email are mandatory.
+            Name, phonenumber, email and birthday are mandatory.
           </p>
           <form enctype="multipart/form-data" onSubmit={handleTalentSave}>
             <div className="mt-8 grid lg:grid-cols-3 gap-4">
@@ -136,7 +136,7 @@ export const TalentForm = (props) => {
                 </label>
                 <div className="col-sm-10">
                   <input
-                    type="date"
+                    type="number"
                     className="form-control"
                     id="height"
                     name="height"

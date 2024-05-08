@@ -57,7 +57,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>Ulah film</p>
+          <p>Ulah Film</p>
         </div>
       </div>
     </div>

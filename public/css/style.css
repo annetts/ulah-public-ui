@@ -264,12 +264,20 @@ header .intro-text {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  z-index: 1000;
 }
 .popup-inner {
   max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.popup .form-group {
+  margin-bottom: 10px;
+}
+body.modal-open {
+  opacity: 0.8;
+  overflow: hidden;
 }
 /* Features Section */
 #features {
@@ -704,10 +712,7 @@ label {
   background: #fff;
 }
 #contact img {
-  height: 350px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  border-radius: 10px; 
 }
 /* Footer Section*/
 #footer {
